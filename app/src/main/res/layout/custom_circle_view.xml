@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame1"
+        android:layout_centerInParent="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/framelayout_halves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/halves_top"
+            android:background="@drawable/top_part">
+
+            <Button
+                android:id="@+id/button_fragment_top_halves"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="FOLLOW ME #1"
+                android:textColor="#d3d3d3"
+                android:textSize="12sp"
+                android:background="@android:color/holo_orange_light"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/halves_bottom"
+            android:background="@drawable/bottom_part">
+
+            <Button
+                android:id="@+id/button_fragment_bottom_halves"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="FOLLOW ME #2"
+                android:textColor="#d3d3d3"
+                android:textSize="12sp"
+                android:background="@android:color/holo_orange_light"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
